@@ -20,6 +20,7 @@ pkgs:
         gh
         streamlink
         bat
+        miru
         qbittorrent
         testdisk-qt
         nixfmt-rfc-style

@@ -169,7 +169,6 @@ in
         packages =
           import ./.shvl/stable.nix pkgs
           ++ import ./.shvl/unstable.nix pkgsUnstable
-          # ++ import ./.shvl/legacy.nix pkgsLegacy
           ++ [
             technorino
             burn2cool.derivation
@@ -180,8 +179,6 @@ in
 
   environment = {
     systemPackages = with pkgs; [
-      # kdePackages.networkmanager-qt
-      # kdePackages.sddm-kcm
       kdePackages.full
       vim
       wget

@@ -18,8 +18,8 @@
       };
       bashrcExtra = ''
         eval "$(ssh-agent -s)" > /dev/null
-        # ssh-add ~/.ssh/github_2547techno 2> /dev/null
-        # ssh-add ~/.ssh/github 2> /dev/null
+        ssh-add ~/.ssh/github_2547techno 2> /dev/null
+        ssh-add ~/.ssh/github 2> /dev/null
       '';
     };
   };
