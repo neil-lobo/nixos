@@ -1,0 +1,37 @@
+pkgs:
+(
+    with pkgs;
+    [
+        kdePackages.kate
+        thunderbird
+        google-chrome
+        spotify
+        discord
+        postman
+        gimp3
+        libreoffice-qt6
+        vlc
+        obs-studio
+        notepad-next
+        obsidian
+        docui
+        kitty
+        plasma-panel-colorizer
+        gh
+        streamlink
+        bat
+        qbittorrent
+        testdisk-qt
+        nixfmt-rfc-style
+        jq
+        wireshark
+        mitmproxy
+        act
+        attic-client
+        cachix
+        nix-tree
+        graphviz
+        piper
+        melonDS
+    ]
+)
