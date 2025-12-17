@@ -1,5 +1,6 @@
 {
   system,
+  pkgs,
   ...
 }:
 {
@@ -58,6 +59,10 @@
         nvidiaBusId = "PCI:10:0:0"; # do i need to use 09:01:0 ? (thunderbolt 3 port)
       };
     };
+  };
+
+  environment = {
+    systemPackages = import ./.shvl/system.nix pkgs;
   };
 
   system.stateVersion = "25.05"; # Did you read the comment?

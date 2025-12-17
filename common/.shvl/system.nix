@@ -1,0 +1,31 @@
+pkgs:
+(
+    with pkgs;
+    [
+        kdePackages.full
+        vim
+        wget
+        docker
+        git
+        nodejs_22
+        zulu24
+        rustc
+        cargo
+        go
+        zip
+        unzip
+        rar
+        toybox
+        lshw
+        mesa-demos
+        htop
+        gpustat
+        xorg.xeyes
+        catppuccin-sddm
+        coreboot-toolchain.x64
+        lm_sensors
+        patchelf
+        python314
+        dig
+    ]
+)

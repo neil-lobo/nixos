@@ -178,37 +178,7 @@ in
   };
 
   environment = {
-    systemPackages = with pkgs; [
-      kdePackages.full
-      vim
-      wget
-      docker
-      git
-      nodejs_22
-      zulu24
-      rustc
-      cargo
-      go
-      zip
-      unzip
-      rar
-      toybox
-      lshw
-      mesa-demos
-      htop
-      gpustat
-      intel-gpu-tools
-      tbtools
-      xorg.xeyes
-      catppuccin-sddm
-      joypixels
-      thermald
-      coreboot-toolchain.x64
-      lm_sensors
-      patchelf
-      python314
-      dig
-    ];
+    systemPackages = import ./.shvl/system.nix pkgs;
     variables = {
       CHATTERINO2_RECENT_MESSAGES_URL = "https://logs.zonian.dev/rm/%1";
       EDITOR = "vim";
