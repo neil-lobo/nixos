@@ -38,10 +38,29 @@
                 users.neil = ./epoch/home.nix;
               };
             }
-            ./common/configuration.nix
             ./epoch/configuration.nix
           ];
         };
+        titan = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit system technorino-flake;
+            pkgsUnstable = import nixpkgs-unstable {
+              inherit system;
+              config.allowUnfree = true;
+            };
+          };
+        };
+        modules = [
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.neil = ./titan/home.nix;
+            };
+          }
+          ./titan/configuration.nix
+        ];
       };
     };
 }

@@ -5,13 +5,13 @@
 }:
 {
   imports = [
+    ../common/configuration.nix
     "${
       builtins.fetchGit {
         url = "https://github.com/NixOS/nixos-hardware.git";
         rev = "db030f62a449568345372bd62ed8c5be4824fa49";
       }
     }/lenovo/thinkpad/x1/7th-gen"
-
     ./hardware-configuration.nix
   ];
 
@@ -46,7 +46,6 @@
       enable = true;
       powerOnBoot = true;
     };
-    graphics.enable = true;
     nvidia = {
       prime = {
         #         sync.enable = true;
