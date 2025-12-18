@@ -2,7 +2,6 @@
   config,
   pkgs,
   pkgsUnstable,
-  # pkgsLegacy,
   lib,
   system,
   technorino-flake,
@@ -188,7 +187,4 @@ in
       #       __VK_LAYER_NV_optimus="NVIDIA_only";
     };
   };
-
-  system.stateVersion = "25.05"; # Did you read the comment?
-
 }
