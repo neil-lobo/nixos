@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs?rev=d2ed99647a4b195f0bcc440f76edfa10aeb3b743"; # 25.11
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    technorino-flake.url = "git+https://github.com/2547techno/technorino";
+    technorino.url = "git+https://github.com/2547techno/technorino";
     home-manager.url = "github:nix-community/home-manager/release-25.05";
   };
 
@@ -13,7 +13,7 @@
       self,
       nixpkgs,
       nixpkgs-unstable,
-      technorino-flake,
+      technorino,
       home-manager,
     }:
     let
@@ -23,7 +23,7 @@
       nixosConfigurations = {
         epoch = nixpkgs.lib.nixosSystem {
           specialArgs = {
-            inherit system technorino-flake;
+            inherit system technorino;
             pkgsUnstable = import nixpkgs-unstable {
               inherit system;
               config.allowUnfree = true;
@@ -43,7 +43,7 @@
         };
         titan = nixpkgs.lib.nixosSystem {
           specialArgs = {
-            inherit system technorino-flake;
+            inherit system technorino;
             pkgsUnstable = import nixpkgs-unstable {
               inherit system;
               config.allowUnfree = true;

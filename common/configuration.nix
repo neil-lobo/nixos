@@ -4,12 +4,12 @@
   pkgsUnstable,
   lib,
   system,
-  technorino-flake,
+  technorino,
   ...
 }:
 
 let
-  technorino = technorino-flake.packages.${system}.package;
+  technorino-derivation = technorino.packages.${system}.default;
   burn2cool = import ../pkgs/burn2cool.nix {
     inherit pkgs;
     thermalZone = 5;
@@ -173,7 +173,7 @@ in
           import ./.shvl/stable.nix pkgs
           ++ import ./.shvl/unstable.nix pkgsUnstable
           ++ [
-            technorino
+            technorino-derivation
             burn2cool.derivation
           ];
       };

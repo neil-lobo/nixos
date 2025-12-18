@@ -88,10 +88,10 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs_2",
         "nixpkgs-unstable": "nixpkgs-unstable",
-        "technorino-flake": "technorino-flake"
+        "technorino": "technorino"
       }
     },
-    "technorino-flake": {
+    "technorino": {
       "inputs": {
         "nixpkgs": "nixpkgs_3"
       },
