@@ -34,5 +34,6 @@ pkgs:
         graphviz
         piper
         melonDS
+        prismlauncher
     ]
 )
