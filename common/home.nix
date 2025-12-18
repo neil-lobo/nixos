@@ -26,6 +26,11 @@
       enable = true;
       userName = "neil-lobo";
       userEmail = "neil_edward_lobo@hotmail.com";
+      signing = {
+        format = "ssh";
+        key = "~/.ssh/github";
+        signByDefault = true;
+      };
     };
   };
 }
