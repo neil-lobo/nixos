@@ -27,5 +27,6 @@ pkgs:
         patchelf
         python314
         dig
+        avahi
     ]
 )

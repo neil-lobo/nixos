@@ -51,6 +51,7 @@ in
       enable = true;
       theme = "catppuccin-mocha";
     };
+
     desktopManager.plasma6.enable = true;
 
     printing.enable = true;
@@ -64,11 +65,14 @@ in
       pulse.enable = true;
     };
 
-    power-profiles-daemon = {
-      enable = true;
-    };
+    power-profiles-daemon.enable = true;
 
     ratbagd.enable = true;
+
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+    };
   };
 
   security.rtkit.enable = true;
