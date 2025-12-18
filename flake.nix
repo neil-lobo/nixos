@@ -49,18 +49,18 @@
               config.allowUnfree = true;
             };
           };
+          modules = [
+            home-manager.nixosModules.home-manager
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users.neil = ./titan/home.nix;
+              };
+            }
+            ./titan/configuration.nix
+          ];
         };
-        modules = [
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.neil = ./titan/home.nix;
-            };
-          }
-          ./titan/configuration.nix
-        ];
       };
     };
 }
