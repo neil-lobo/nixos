@@ -15,6 +15,9 @@
         la = "ls -lahF";
         nrs = "nixos-rebuild switch";
         sudocode = "sudo code --no-sandbox --user-data-dir=/.vscode-root/";
+        gph = "git push";
+        gpl = "git pull";
+        gb = "git branch";
       };
       bashrcExtra = ''
         eval "$(ssh-agent -s)" > /dev/null
@@ -31,11 +34,15 @@
         key = "~/.ssh/github";
         signByDefault = true;
       };
+      aliases = {
+        ca = "commit -a";
+        cam = "commit -a --amend";
+      };
     };
     readline = {
       enable = true;
       variables = {
-        completion-ignore-case = true
+        completion-ignore-case = true;
       };
     };
   };
