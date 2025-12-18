@@ -38,6 +38,9 @@
         ca = "commit -a";
         cam = "commit -a --amend";
       };
+      extraConfig = {
+        pull.rebase = false;
+      };
     };
     readline = {
       enable = true;
