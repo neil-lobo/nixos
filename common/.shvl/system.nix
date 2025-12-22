@@ -6,6 +6,7 @@ pkgs:
         vim
         wget
         docker
+	lazydocker
         git
         nodejs_22
         zulu24
