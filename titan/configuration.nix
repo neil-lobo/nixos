@@ -35,11 +35,11 @@
     };
   };
 
-  programs = {
-    nix-ld = {
-      enable = true;
-    };
-  };
+  # programs = {
+  #   nix-ld = {
+  #     enable = true;
+  #   };
+  # };
 
   system.stateVersion = "25.05"; # Did you read the comment?
 }
