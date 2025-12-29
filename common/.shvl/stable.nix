@@ -6,7 +6,6 @@ pkgs:
         thunderbird
         google-chrome
         spotify
-        discord
         postman
         gimp3
         libreoffice-qt6
