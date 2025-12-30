@@ -34,5 +34,6 @@ pkgs:
         piper
         melonDS
         prismlauncher
+        neofetch
     ]
 )
