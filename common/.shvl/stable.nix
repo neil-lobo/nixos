@@ -33,6 +33,7 @@ pkgs:
         graphviz
         piper
         melonDS
+        desmume
         prismlauncher
         neofetch
     ]
