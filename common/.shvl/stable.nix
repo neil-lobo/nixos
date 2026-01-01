@@ -4,7 +4,6 @@ pkgs:
     [
         kdePackages.kate
         thunderbird
-        google-chrome
         spotify
         postman
         gimp3

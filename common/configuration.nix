@@ -179,6 +179,8 @@ in
           ++ [
             technorino-derivation
             burn2cool.derivation
+            (import ./pkgs/discord.nix pkgsUnstable)
+            (import ./pkgs/chrome.nix pkgs)
           ];
       };
     };

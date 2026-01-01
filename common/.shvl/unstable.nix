@@ -5,6 +5,5 @@ pkgs:
         gale
         vscode
         twitch-cli
-        discord
     ]
 )
