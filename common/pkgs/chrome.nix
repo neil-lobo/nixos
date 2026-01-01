@@ -1,4 +1,6 @@
-pkgs:
+{
+  pkgs ? import <nixpkgs> { },
+}:
 pkgs.symlinkJoin {
   name = "google-chrome";
   paths = [ pkgs.google-chrome ];

@@ -1,4 +1,6 @@
-pkgs:
+{
+  pkgs ? import <nixpkgs> { },
+}:
 pkgs.symlinkJoin {
   name = "discord";
   paths = [ pkgs.discord ];

@@ -35,5 +35,6 @@ pkgs:
         desmume
         prismlauncher
         neofetch
+        qpwgraph
     ]
 )

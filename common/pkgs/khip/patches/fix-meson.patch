@@ -1,0 +1,20 @@
+diff --git a/meson.build b/meson.build
+index 3523916..50de7dd 100644
+--- a/meson.build
++++ b/meson.build
+@@ -15,7 +15,7 @@ cc = meson.get_compiler('c')
+ 
+ math_dep = cc.find_library('m', required: false)
+ fftw_dep = dependency('fftw3f')
+-blas_dep = dependency('openblas')
++blas_dep = dependency('blas')
+ samplerate_dep = dependency('samplerate')
+ 
+ if fs.is_file('model_32.kw')
+@@ -77,4 +77,4 @@ if cc.has_header('ladspa.h')
+         install: true,
+         install_dir: get_option('libdir') / 'ladspa',
+     )
+-endif
+\ No newline at end of file
++endif
