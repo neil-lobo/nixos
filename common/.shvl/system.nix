@@ -6,7 +6,7 @@ pkgs:
         vim
         wget
         docker
-	lazydocker
+        lazydocker
         git
         nodejs_22
         zulu24
@@ -29,5 +29,6 @@ pkgs:
         python314
         dig
         avahi
+        smartmontools
     ]
 )
