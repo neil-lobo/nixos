@@ -36,5 +36,6 @@ pkgs:
         prismlauncher
         neofetch
         qpwgraph
+        easyeffects
     ]
 )
