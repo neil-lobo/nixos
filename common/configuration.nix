@@ -10,7 +10,7 @@
 
 let
   technorino-derivation = technorino.packages.${system}.default;
-  burn2cool = import ../pkgs/burn2cool.nix {
+  burn2cool = import ./pkgs/burn2cool.nix {
     inherit pkgs;
     thermalZone = 5;
   };
