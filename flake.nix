@@ -2,7 +2,7 @@
   description = "nixos config";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs?rev=d2ed99647a4b195f0bcc440f76edfa10aeb3b743"; # 25.11
+    nixpkgs.url = "github:NixOS/nixpkgs?rev=40ee5e1944bebdd128f9fbada44faefddfde29bd"; # 25.05
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     technorino.url = "git+https://github.com/2547techno/technorino";
     home-manager.url = "github:nix-community/home-manager/release-25.05";
