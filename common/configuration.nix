@@ -208,7 +208,7 @@ in
             technorino-derivation
             burn2cool.derivation
             (import ./pkgs/discord.nix { pkgs = pkgsUnstable; })
-            (import ./pkgs/chrome.nix { inherit pkgs; })
+            (import ./pkgs/chrome.nix { pkgs = pkgsUnstable; })
           ];
       };
     };
