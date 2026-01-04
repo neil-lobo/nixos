@@ -156,6 +156,17 @@ in
     direnv.enable = true;
   };
 
+  fonts = {
+    packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-emoji
+      liberation_ttf
+      fira-code
+      mplus-outline-fonts.githubRelease
+    ];
+  };
+
   nixpkgs = {
     config = {
       allowUnfree = true;
@@ -219,6 +230,7 @@ in
     variables = {
       CHATTERINO2_RECENT_MESSAGES_URL = "https://logs.zonian.dev/rm/%1";
       EDITOR = "vim";
+      NIXOS_OZONE_WL = "1";
     };
   };
 }
