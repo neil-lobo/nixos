@@ -57,6 +57,8 @@
         intelBusId = "PCI:0:2:0";
         nvidiaBusId = "PCI:10:0:0"; # do i need to use 09:01:0 ? (thunderbolt 3 port)
       };
+      open = true;
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
     };
   };
 

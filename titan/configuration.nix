@@ -1,6 +1,7 @@
 {
   system,
   pkgs,
+  config,
   ...
 }:
 {
@@ -32,6 +33,13 @@
         workstation = true;
         addresses = true;
       };
+    };
+  };
+
+  hardware = {
+    nvidia = {
+      open = false;
+      package = config.boot.kernelPackages.nvidiaPackages.production;
     };
   };
 
