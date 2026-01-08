@@ -96,11 +96,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1767244373,
-        "narHash": "sha256-tlxdbSGlHlrVs+20JAewLhx/UaAzsHcoHfDmnrcNFx8=",
+        "lastModified": 1767915614,
+        "narHash": "sha256-QrEGvT1MJjnxK8RA/oC9EmD6xi3odqoePHzpujvMFqk=",
         "ref": "refs/heads/technorino",
-        "rev": "5f1023d3dbe82a54b16d0e61646fec64f2ee801d",
-        "revCount": 5968,
+        "rev": "d0b8c40d311fb7cf71e109062ce25235250644c4",
+        "revCount": 6010,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/2547techno/technorino"
