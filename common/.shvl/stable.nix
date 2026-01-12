@@ -37,5 +37,6 @@ pkgs:
         neofetch
         qpwgraph
         easyeffects
+        audacity
     ]
 )
