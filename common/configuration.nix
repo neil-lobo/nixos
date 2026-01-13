@@ -25,6 +25,10 @@ in
       };
       efi.canTouchEfiVariables = true;
     };
+
+    kernelParams = [
+      "boot.shell_on_fail"
+    ];
   };
 
   networking = {
