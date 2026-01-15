@@ -38,5 +38,6 @@ pkgs:
         qpwgraph
         easyeffects
         audacity
+        websocat
     ]
 )
