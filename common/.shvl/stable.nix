@@ -39,6 +39,5 @@ pkgs:
         easyeffects
         audacity
         websocat
-        chromium
     ]
 )
