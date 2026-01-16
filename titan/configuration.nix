@@ -1,6 +1,7 @@
 {
   system,
   pkgs,
+  pkgsUnstable,
   config,
   ...
 }:
@@ -48,6 +49,8 @@
   #     enable = true;
   #   };
   # };
+
+  users.users.neil.packages = import ./.shvl/unstable.nix pkgsUnstable;
 
   system.stateVersion = "25.05"; # Did you read the comment?
 }
