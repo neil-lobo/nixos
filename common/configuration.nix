@@ -116,8 +116,6 @@ in
       # };
     };
 
-    power-profiles-daemon.enable = true;
-
     ratbagd.enable = true;
 
     avahi = {

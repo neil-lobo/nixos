@@ -39,6 +39,8 @@
       #         CPU_BOOST_ON_BAT = 0;
       #       };
     };
+
+    power-profiles-daemon.enable = true;
   };
 
   hardware = {

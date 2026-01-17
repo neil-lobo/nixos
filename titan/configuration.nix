@@ -11,6 +11,10 @@
     ./hardware-configuration.nix
   ];
 
+  boot.kernelParams = [
+    "pcie_aspm=off"
+  ];
+
   networking = {
     hostName = "titan";
     firewall = {
@@ -19,6 +23,7 @@
   };
 
   services = {
+    power-profiles-daemon.enable = false;
     openssh = {
       enable = true;
       ports = [ 22 ];
@@ -43,6 +48,8 @@
       package = config.boot.kernelPackages.nvidiaPackages.production;
     };
   };
+
+  powerManagement.cpuFreqGovernor = "performance";
 
   # programs = {
   #   nix-ld = {
