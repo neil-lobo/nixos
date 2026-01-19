@@ -30,5 +30,6 @@ pkgs:
         dig
         avahi
         smartmontools
+        inetutils
     ]
 )
