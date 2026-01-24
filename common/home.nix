@@ -18,6 +18,7 @@
         gph = "git push";
         gpl = "git pull";
         gb = "git branch";
+        nd = "nix develop";
       };
       bashrcExtra = ''
         eval "$(ssh-agent -s)" > /dev/null
