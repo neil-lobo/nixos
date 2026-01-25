@@ -1,6 +1,7 @@
 {
   system,
   pkgs,
+  config,
   ...
 }:
 {
