@@ -1,6 +1,7 @@
 {
   system,
   pkgs,
+  pkgsUnstable,
   config,
   ...
 }:
@@ -66,7 +67,9 @@
   };
 
   environment = {
-    systemPackages = import ./.shvl/system.nix pkgs;
+    systemPackages = (import ./.shvl/system.nix pkgs) ++ [
+      (import ./pkgs/chrome.nix { pkgs = pkgsUnstable; })
+    ];
   };
 
   system.stateVersion = "25.05"; # Did you read the comment?

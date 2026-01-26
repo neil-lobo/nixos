@@ -57,7 +57,9 @@
   #   };
   # };
 
-  users.users.neil.packages = import ./.shvl/unstable.nix pkgsUnstable;
+  users.users.neil.packages = (import ./.shvl/unstable.nix pkgsUnstable) ++ [
+    (import ./pkgs/chrome.nix { pkgs = pkgsUnstable; })
+  ];
 
   system.stateVersion = "25.05"; # Did you read the comment?
 }
