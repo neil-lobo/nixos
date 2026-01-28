@@ -5,5 +5,6 @@ pkgs:
         gale
         vscode
         twitch-cli
+        bruno
     ]
 )
