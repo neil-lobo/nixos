@@ -18,6 +18,7 @@
         gph = "git push";
         gpl = "git pull";
         gb = "git branch";
+        gl = "git log";
         nd = "nix develop";
       };
       bashrcExtra = ''
