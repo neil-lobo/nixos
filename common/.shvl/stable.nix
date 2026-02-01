@@ -40,5 +40,6 @@ pkgs:
         audacity
         websocat
         beekeeper-studio
+        ripgrep
     ]
 )
