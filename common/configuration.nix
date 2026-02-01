@@ -147,7 +147,10 @@ in
   virtualisation.docker.enable = true;
 
   programs = {
-    firefox.enable = true;
+    firefox = {
+      enable = true;
+      package = pkgsUnstable.firefox;
+    };
     steam.enable = true;
     appimage = {
       enable = true;
