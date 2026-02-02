@@ -19,6 +19,7 @@
         gpl = "git pull";
         gb = "git branch";
         gl = "git log";
+        gs = "git status";
         nd = "nix develop";
       };
       bashrcExtra = ''
