@@ -33,9 +33,6 @@ in
 
   networking = {
     networkmanager.enable = true;
-    extraHosts = ''
-      172.64.80.1 cdn.7tv.app
-    '';
     nameservers = [
       "8.8.8.8"
       "1.1.1.1"
