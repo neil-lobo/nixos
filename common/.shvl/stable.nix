@@ -41,5 +41,6 @@ pkgs:
         websocat
         beekeeper-studio
         ripgrep
+        tokei
     ]
 )
