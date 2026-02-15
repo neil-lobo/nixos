@@ -9,6 +9,7 @@ pkgs:
         lazydocker
         git
         nodejs_22
+        pnpm
         zulu24
         rustc
         cargo
