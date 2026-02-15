@@ -51,5 +51,11 @@
         completion-ignore-case = true;
       };
     };
+    # firefox = {
+    #   enable = true;
+    #   profiles.default.settings = {
+    #     "network.http.speculative-parallel-limit" = 12;
+    #   };
+    # };
   };
 }
