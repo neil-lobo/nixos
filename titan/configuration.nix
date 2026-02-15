@@ -3,12 +3,14 @@
   pkgs,
   pkgsUnstable,
   config,
+  nix-flatpak,
   ...
 }:
 {
   imports = [
     ../common/configuration.nix
     ./hardware-configuration.nix
+    nix-flatpak.nixosModules.nix-flatpak
   ];
 
   boot.kernelParams = [
@@ -39,6 +41,13 @@
         workstation = true;
         addresses = true;
       };
+    };
+    flatpak = {
+      enable = true;
+      packages = [
+        "org.vinegarhq.Sober"
+        "org.vinegarhq.Vinegar"
+      ];
     };
   };
 

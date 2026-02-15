@@ -6,6 +6,7 @@
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     technorino.url = "git+https://github.com/2547techno/technorino";
     home-manager.url = "github:nix-community/home-manager/release-25.05";
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
   outputs =
@@ -15,6 +16,7 @@
       nixpkgs-unstable,
       technorino,
       home-manager,
+      nix-flatpak,
     }:
     let
       system = "x86_64-linux";
@@ -43,7 +45,7 @@
         };
         titan = nixpkgs.lib.nixosSystem {
           specialArgs = {
-            inherit system technorino;
+            inherit system technorino nix-flatpak;
             pkgsUnstable = import nixpkgs-unstable {
               inherit system;
               config.allowUnfree = true;
