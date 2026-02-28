@@ -47,6 +47,7 @@
       packages = [
         "org.vinegarhq.Sober"
         "org.vinegarhq.Vinegar"
+        "org.gnome.baobab"
       ];
     };
   };
