@@ -11,6 +11,7 @@ pkgs:
         nodejs_22
         pnpm
         zulu24
+        maven
         rustc
         cargo
         go
