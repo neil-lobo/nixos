@@ -230,6 +230,19 @@ in
       CHATTERINO2_RECENT_MESSAGES_URL = "https://logs.zonian.dev/rm/%1";
       EDITOR = "vim";
       NIXOS_OZONE_WL = "1";
+      # TODO: this is used for ninjabrainbot to work in waywall. look into fixing prism/waywall instead. this is a temp fix
+      LD_LIBRARY_PATH = "${
+        pkgs.lib.makeLibraryPath (
+          with pkgs;
+          [
+            libxkbcommon
+            xorg.libXtst
+            xorg.libX11
+            xorg.libXt
+            xorg.libXinerama
+          ]
+        )
+      }:$LD_LIBRARY_PATH";
     };
   };
 }
