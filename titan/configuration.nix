@@ -4,8 +4,12 @@
   pkgsUnstable,
   config,
   nix-flatpak,
+  ninjabrainbot,
   ...
 }:
+let
+  ninjabrainbot-derivation = ninjabrainbot.packages.${system}.default;
+in
 {
   imports = [
     ../common/configuration.nix
@@ -113,6 +117,7 @@
     ++ (import ./.shvl/stable.nix pkgs)
     ++ [
       (import ./pkgs/chrome.nix { pkgs = pkgsUnstable; })
+      ninjabrainbot-derivation
     ];
 
   system.stateVersion = "25.05"; # Did you read the comment?
