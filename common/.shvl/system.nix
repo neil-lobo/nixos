@@ -33,5 +33,6 @@ pkgs:
         avahi
         smartmontools
         inetutils
+        gparted
     ]
 )
