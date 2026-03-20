@@ -29,29 +29,29 @@ in
 
   networking = {
     hostName = "titan";
-    firewall = {
-      allowedTCPPorts = [ 22 ];
-    };
+    # firewall = {
+    #   allowedTCPPorts = [ 22 ];
+    # };
   };
 
   services = {
     power-profiles-daemon.enable = false;
-    openssh = {
-      enable = true;
-      ports = [ 22 ];
-      settings = {
-        PasswordAuthentication = false;
-        AllowUsers = [ "neil" ];
-        X11Forwarding = true;
-      };
-    };
-    avahi = {
-      publish = {
-        enable = true;
-        workstation = true;
-        addresses = true;
-      };
-    };
+    # openssh = {
+    #   enable = true;
+    #   ports = [ 22 ];
+    #   settings = {
+    #     PasswordAuthentication = false;
+    #     AllowUsers = [ "neil" ];
+    #     X11Forwarding = true;
+    #   };
+    # };
+    # avahi = {
+    #   publish = {
+    #     enable = true;
+    #     workstation = true;
+    #     addresses = true;
+    #   };
+    # };
     flatpak = {
       enable = true;
       packages = [
