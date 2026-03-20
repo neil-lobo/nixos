@@ -10,10 +10,10 @@
 
 let
   technorino-derivation = technorino.packages.${system}.default;
-  burn2cool = import ./pkgs/burn2cool.nix {
-    inherit pkgs;
-    thermalZone = 5;
-  };
+  # burn2cool = import ./pkgs/burn2cool.nix {
+  #   inherit pkgs;
+  #   thermalZone = 5;
+  # };
   khip = import ./pkgs/khip/default.nix { inherit pkgs; };
 in
 {
@@ -193,9 +193,9 @@ in
     ];
   };
 
-  systemd.services = {
-    burn2cool = burn2cool.systemd;
-  };
+  # systemd.services = {
+  #   burn2cool = burn2cool.systemd;
+  # };
 
   users = {
     groups = {
@@ -217,7 +217,7 @@ in
           ++ import ./.shvl/unstable.nix pkgsUnstable
           ++ [
             technorino-derivation
-            burn2cool.derivation
+            # burn2cool.derivation
             (import ./pkgs/discord.nix { pkgs = pkgsUnstable; })
           ];
       };
