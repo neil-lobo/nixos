@@ -17,9 +17,9 @@ in
     nix-flatpak.nixosModules.nix-flatpak
   ];
 
-  boot.kernelParams = [
-    "pcie_aspm=off"
-  ];
+  # boot.kernelParams = [
+  #   "pcie_aspm=off"
+  # ];
 
   hardware = {
     graphics = {
@@ -35,7 +35,7 @@ in
   };
 
   services = {
-    power-profiles-daemon.enable = false;
+    # power-profiles-daemon.enable = false;
     # openssh = {
     #   enable = true;
     #   ports = [ 22 ];
@@ -110,7 +110,7 @@ in
     };
   };
 
-  powerManagement.cpuFreqGovernor = "performance";
+  # powerManagement.cpuFreqGovernor = "performance";
 
   # programs = {
   #   nix-ld = {
