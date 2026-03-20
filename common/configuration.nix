@@ -51,8 +51,8 @@ in
         variant = "";
       };
       videoDrivers = [
-        "modesetting"
         "nvidia"
+        "modesetting"
       ];
     };
 

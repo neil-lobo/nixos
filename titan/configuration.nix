@@ -21,6 +21,12 @@ in
     "pcie_aspm=off"
   ];
 
+  hardware = {
+    graphics = {
+      enable32Bit = true;
+    };
+  };
+
   networking = {
     hostName = "titan";
     firewall = {
