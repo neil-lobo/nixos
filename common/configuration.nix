@@ -58,7 +58,7 @@ in
 
     displayManager.sddm = {
       enable = true;
-      theme = "catppuccin-mocha";
+      # theme = "catppuccin-mocha";
     };
 
     desktopManager.plasma6.enable = true;

@@ -24,7 +24,7 @@ pkgs:
         htop
         gpustat
         xorg.xeyes
-        catppuccin-sddm
+        # catppuccin-sddm
         coreboot-toolchain.x64
         lm_sensors
         patchelf
