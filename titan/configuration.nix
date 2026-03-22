@@ -112,11 +112,11 @@ in
 
   # powerManagement.cpuFreqGovernor = "performance";
 
-  # programs = {
-  #   nix-ld = {
-  #     enable = true;
-  #   };
-  # };
+  programs = {
+    nix-ld = {
+      enable = true;
+    };
+  };
 
   users.users.neil.packages =
     (import ./.shvl/unstable.nix pkgsUnstable)
