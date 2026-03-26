@@ -42,5 +42,6 @@ pkgs:
         beekeeper-studio
         ripgrep
         tokei
+        openvpn
     ]
 )
