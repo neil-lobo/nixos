@@ -34,5 +34,6 @@ pkgs:
         smartmontools
         inetutils
         gparted
+        tcpdump
     ]
 )
