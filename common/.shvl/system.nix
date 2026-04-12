@@ -35,5 +35,7 @@ pkgs:
         inetutils
         gparted
         tcpdump
+        update-systemd-resolved
+        socat
     ]
 )
