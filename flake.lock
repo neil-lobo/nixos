@@ -24,11 +24,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1773286159,
-        "narHash": "sha256-tSOz+iyHK/u5E8Dd6rkBS5PpdHZZ8EXvw+7Ev9lV+p8=",
+        "lastModified": 1776126409,
+        "narHash": "sha256-0YxbHgA2VAP6FiBN57KgQxSAY/9y9F3BdrB7XzPiIAM=",
         "owner": "neil-lobo",
         "repo": "Ninjabrain-Bot",
-        "rev": "0299e709c6bfa354fa69639b1b8f58b351fd70b6",
+        "rev": "3a7c7e183d569ab691ca492897c30f5ffe874f2a",
         "type": "github"
       },
       "original": {
