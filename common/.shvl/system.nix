@@ -37,5 +37,6 @@ pkgs:
         tcpdump
         update-systemd-resolved
         socat
+        wine
     ]
 )
