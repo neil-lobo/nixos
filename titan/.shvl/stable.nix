@@ -5,6 +5,7 @@ pkgs:
         neo4j
         waywall
         azahar
+        ryubing
         stremio
     ]
 )
