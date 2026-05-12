@@ -14,7 +14,6 @@ let
   #   inherit pkgs;
   #   thermalZone = 5;
   # };
-  khip = import ./pkgs/khip/default.nix { inherit pkgs; };
 in
 {
   boot = {
@@ -75,45 +74,6 @@ in
       alsa.enable = true;
       alsa.support32Bit = true;
       pulse.enable = true;
-      # this doesnt work entirely. i got it to work after manually editing connections in qpwgraph but hard coded, no.
-      # this as led me to discover that i can use any pipewire plugin for noise cancelation
-      # extraConfig.pipewire."99-khip-filter" = {
-      #   "context.modules" = [
-      #     {
-      #       name = "libpipewire-module-filter-chain";
-      #       args = {
-      #         "node.description" = "Khip Noise Suppression";
-      #         "media.name" = "Khip Noise Suppression";
-      #         "filter.graph" = {
-      #           nodes = [
-      #             {
-      #               type = "ladspa";
-      #               name = "khip_node";
-      #               plugin = "${khip}/lib/ladspa/libkhip_ladspa.so";
-      #               label = "khip_ladspa";
-      #             }
-      #           ];
-      #           inputs = [ "khip_node:Input" ];
-      #           outputs = [ "khip_node:Output" ];
-      #         };
-      #         "capture.props" = {
-      #           "node.name" = "khip_input";
-      #           "media.class" = "Audio/Sink"; # This makes it appear as an output you can route to
-      #           "node.passive" = true; # Tells PipeWire this is a helper node
-      #           "audio.channels" = 1;
-      #           "audio.position" = [ "MONO" ];
-      #           "target.object" = "alsa_input.usb-Logitech_G935_Gaming_Headset-00.mono-fallback";
-      #         };
-      #         "playback.props" = {
-      #           "node.name" = "khip_output";
-      #           "media.class" = "Audio/Source"; # This makes it appear as a Virtual Microphone
-      #           "audio.channels" = 1;
-      #           "audio.position" = [ "MONO" ];
-      #         };
-      #       };
-      #     }
-      #   ];
-      # };
     };
 
     ratbagd.enable = true;
