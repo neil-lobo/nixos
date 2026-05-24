@@ -43,5 +43,6 @@ pkgs:
         ripgrep
         tokei
         openvpn
+        texliveFull
     ]
 )
