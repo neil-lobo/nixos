@@ -96,10 +96,6 @@ in
     graphics.enable = true;
     nvidia = {
       modesetting.enable = true;
-      powerManagement = {
-        enable = false;
-        finegrained = false;
-      };
       nvidiaSettings = true;
     };
   };

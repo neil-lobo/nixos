@@ -105,6 +105,8 @@ in
 
   hardware = {
     nvidia = {
+      powerManagement.enable = true;
+      # powerManagement.finegrained = true; # may also need to enable if the above doesnt fix my issues
       open = false;
       package = config.boot.kernelPackages.nvidiaPackages.production;
     };
