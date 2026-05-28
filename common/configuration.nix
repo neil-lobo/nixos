@@ -10,10 +10,6 @@
 
 let
   technorino-derivation = technorino.packages.${system}.default;
-  # burn2cool = import ./pkgs/burn2cool.nix {
-  #   inherit pkgs;
-  #   thermalZone = 5;
-  # };
 in
 {
   boot = {
@@ -60,7 +56,6 @@ in
     displayManager.sddm = {
       enable = true;
       wayland.enable = true;
-      # theme = "catppuccin-mocha";
     };
 
     desktopManager.plasma6.enable = true;
@@ -78,10 +73,6 @@ in
 
     ratbagd.enable = true;
 
-    # avahi = {
-    #   enable = true;
-    #   nssmdns4 = true;
-    # };
   };
 
   security.rtkit.enable = true;
@@ -152,10 +143,6 @@ in
     ];
   };
 
-  # systemd.services = {
-  #   burn2cool = burn2cool.systemd;
-  # };
-
   users = {
     groups = {
       wireshark = {
@@ -176,7 +163,6 @@ in
           ++ import ./.shvl/unstable.nix pkgsUnstable
           ++ [
             technorino-derivation
-            # burn2cool.derivation
             (import ./pkgs/discord.nix { pkgs = pkgsUnstable; })
           ];
       };

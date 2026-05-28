@@ -17,10 +17,6 @@ in
     nix-flatpak.nixosModules.nix-flatpak
   ];
 
-  # boot.kernelParams = [
-  #   "pcie_aspm=off"
-  # ];
-
   hardware = {
     graphics = {
       enable32Bit = true;
@@ -29,29 +25,9 @@ in
 
   networking = {
     hostName = "titan";
-    # firewall = {
-    #   allowedTCPPorts = [ 22 ];
-    # };
   };
 
   services = {
-    # power-profiles-daemon.enable = false;
-    # openssh = {
-    #   enable = true;
-    #   ports = [ 22 ];
-    #   settings = {
-    #     PasswordAuthentication = false;
-    #     AllowUsers = [ "neil" ];
-    #     X11Forwarding = true;
-    #   };
-    # };
-    # avahi = {
-    #   publish = {
-    #     enable = true;
-    #     workstation = true;
-    #     addresses = true;
-    #   };
-    # };
     flatpak = {
       enable = true;
       packages = [
@@ -111,8 +87,6 @@ in
       package = config.boot.kernelPackages.nvidiaPackages.production;
     };
   };
-
-  # powerManagement.cpuFreqGovernor = "performance";
 
   programs = {
     nix-ld = {

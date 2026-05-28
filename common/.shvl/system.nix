@@ -24,13 +24,11 @@ pkgs:
         htop
         gpustat
         xorg.xeyes
-        # catppuccin-sddm
         coreboot-toolchain.x64
         lm_sensors
         patchelf
         python314
         dig
-        # avahi
         smartmontools
         inetutils
         gparted

@@ -28,7 +28,6 @@
 
     thermald = {
       enable = false;
-      #       debug = true;
     };
 
     tlp = {
