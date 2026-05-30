@@ -83,7 +83,7 @@ in
     nvidia = {
       powerManagement.enable = true;
       # powerManagement.finegrained = true; # may also need to enable if the above doesnt fix my issues
-      open = false;
+      open = false; # opensource drivers give me issues for some reason
       package = config.boot.kernelPackages.nvidiaPackages.production;
     };
   };
