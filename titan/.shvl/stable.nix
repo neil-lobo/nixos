@@ -7,5 +7,6 @@ pkgs:
         azahar
         ryubing
         stremio
+        lact
     ]
 )
