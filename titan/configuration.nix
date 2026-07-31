@@ -25,6 +25,7 @@ in
 
   networking = {
     hostName = "titan";
+    firewall.allowedTCPPorts = [ 8080 ];
   };
 
   services = {
