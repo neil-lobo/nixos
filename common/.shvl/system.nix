@@ -13,6 +13,7 @@ pkgs:
         zulu24
         maven
         rustc
+	rustup
         cargo
         go
         zip
