@@ -159,8 +159,8 @@ in
           "docker"
         ];
         packages =
-          import ./.shvl/stable.nix pkgs
-          ++ import ./.shvl/unstable.nix pkgsUnstable
+          import ../.shvl/common_stable.nix pkgs
+          ++ import ../.shvl/common_unstable.nix pkgsUnstable
           ++ [
             technorino-derivation
             (import ./pkgs/discord.nix { pkgs = pkgsUnstable; })
@@ -170,7 +170,7 @@ in
   };
 
   environment = {
-    systemPackages = import ./.shvl/system.nix pkgs;
+    systemPackages = import ../.shvl/common_system.nix pkgs;
     variables = {
       CHATTERINO2_RECENT_MESSAGES_URL = "https://logs.zonian.dev/rm/%1";
       EDITOR = "vim";

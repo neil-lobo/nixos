@@ -1,0 +1,43 @@
+# This file is autogenerate by shvl. Do no modify unless you know what you are doing
+
+pkgs:
+(
+	with pkgs;
+	[
+		cargo
+		coreboot-toolchain.x64
+		dig
+		docker
+		git
+		go
+		gparted
+		gpustat
+		htop
+		inetutils
+		kdePackages.full
+		lazydocker
+		lm_sensors
+		lshw
+		maven
+		mesa-demos
+		nodejs_22
+		patchelf
+		pnpm
+		python314
+		rar
+		rustc
+		rustup
+		smartmontools
+		socat
+		tcpdump
+		toybox
+		unzip
+		update-systemd-resolved
+		vim
+		wget
+		wine
+		xorg.xeyes
+		zip
+		zulu24
+	]
+)

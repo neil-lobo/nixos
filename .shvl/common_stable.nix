@@ -1,0 +1,50 @@
+# This file is autogenerate by shvl. Do no modify unless you know what you are doing
+
+pkgs:
+(
+	with pkgs;
+	[
+		act
+		attic-client
+		audacity
+		bat
+		beekeeper-studio
+		cachix
+		desmume
+		docui
+		easyeffects
+		gh
+		gimp3
+		graphviz
+		jq
+		kdePackages.kate
+		kitty
+		libreoffice-qt6
+		melonDS
+		miru
+		mitmproxy
+		neofetch
+		nix-tree
+		nixfmt-rfc-style
+		notepad-next
+		obs-studio
+		obsidian
+		openvpn
+		piper
+		plasma-panel-colorizer
+		postman
+		prismlauncher
+		qbittorrent
+		qpwgraph
+		ripgrep
+		spotify
+		streamlink
+		testdisk-qt
+		texliveFull
+		thunderbird
+		tokei
+		vlc
+		websocat
+		wireshark
+	]
+)

@@ -66,7 +66,7 @@
   };
 
   environment = {
-    systemPackages = (import ./.shvl/system.nix pkgs) ++ [
+    systemPackages = (import ../.shvl/epoch_system.nix pkgs) ++ [
       (import ./pkgs/chrome.nix { pkgs = pkgsUnstable; })
     ];
   };

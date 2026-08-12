@@ -106,8 +106,8 @@ in
   '';
 
   users.users.neil.packages =
-    (import ./.shvl/unstable.nix pkgsUnstable)
-    ++ (import ./.shvl/stable.nix pkgs)
+    (import ../.shvl/titan_unstable.nix pkgsUnstable)
+    ++ (import ../.shvl/titan_stable.nix pkgs)
     ++ [
       (import ./pkgs/chrome.nix { pkgs = pkgsUnstable; })
       ninjabrainbot-derivation
