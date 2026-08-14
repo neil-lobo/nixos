@@ -118,6 +118,22 @@
     },
     "nixpkgs_4": {
       "locked": {
+        "lastModified": 1763049705,
+        "narHash": "sha256-A5LS0AJZ1yDPTa2fHxufZN++n8MCmtgrJDtxFxrH4S8=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "3acb677ea67d4c6218f33de0db0955f116b7588c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-25.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_5": {
+      "locked": {
         "lastModified": 1777077449,
         "narHash": "sha256-AIiMJiqvGrN4HyLEbKAoCSRRYn0rnlW5VbKNIMIYqm4=",
         "owner": "NixOS",
@@ -139,12 +155,31 @@
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs_3",
         "nixpkgs-unstable": "nixpkgs-unstable",
+        "shvl": "shvl",
         "technorino": "technorino"
+      }
+    },
+    "shvl": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4"
+      },
+      "locked": {
+        "lastModified": 1786683620,
+        "narHash": "sha256-OmXzSShm2fRcPjKWIBqHWrBMGSwF4qDoGUqrcjL2jD8=",
+        "owner": "neil-lobo",
+        "repo": "shvl",
+        "rev": "1d54b12f3f4c41be7aae383d0e9b27b62823ee28",
+        "type": "github"
+      },
+      "original": {
+        "owner": "neil-lobo",
+        "repo": "shvl",
+        "type": "github"
       }
     },
     "technorino": {
       "inputs": {
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_5"
       },
       "locked": {
         "lastModified": 1784491056,

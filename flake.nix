@@ -5,6 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs?rev=40ee5e1944bebdd128f9fbada44faefddfde29bd"; # 25.05
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     technorino.url = "git+https://github.com/2547techno/technorino";
+    shvl.url = "github:neil-lobo/shvl";
     ninjabrainbot.url = "github:neil-lobo/Ninjabrain-Bot";
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
@@ -16,6 +17,7 @@
       nixpkgs,
       nixpkgs-unstable,
       technorino,
+      shvl,
       ninjabrainbot,
       home-manager,
       nix-flatpak,
@@ -27,7 +29,7 @@
       nixosConfigurations = {
         epoch = nixpkgs.lib.nixosSystem {
           specialArgs = {
-            inherit system technorino;
+            inherit system technorino shvl;
             pkgsUnstable = import nixpkgs-unstable {
               inherit system;
               config.allowUnfree = true;
@@ -50,6 +52,7 @@
             inherit
               system
               technorino
+              shvl
               ninjabrainbot
               nix-flatpak
               ;

@@ -5,11 +5,13 @@
   lib,
   system,
   technorino,
+  shvl,
   ...
 }:
 
 let
   technorino-derivation = technorino.packages.${system}.default;
+  shvl-derivation = shvl.packages.${system}.default;
 in
 {
   boot = {
@@ -163,6 +165,7 @@ in
           ++ import ../.shvl/common_unstable.nix pkgsUnstable
           ++ [
             technorino-derivation
+            shvl-derivation
             (import ./pkgs/discord.nix { pkgs = pkgsUnstable; })
           ];
       };
