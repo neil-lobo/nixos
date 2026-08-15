@@ -26,7 +26,6 @@ pkgs:
 		python314
 		rar
 		rustc
-		rustup
 		smartmontools
 		socat
 		tcpdump
