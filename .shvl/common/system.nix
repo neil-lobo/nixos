@@ -25,7 +25,6 @@ pkgs:
 		pnpm
 		python314
 		rar
-		rustc
 		smartmontools
 		socat
 		tcpdump
