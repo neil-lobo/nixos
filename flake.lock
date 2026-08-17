@@ -164,11 +164,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1786683620,
-        "narHash": "sha256-OmXzSShm2fRcPjKWIBqHWrBMGSwF4qDoGUqrcjL2jD8=",
+        "lastModified": 1786918572,
+        "narHash": "sha256-sEvuwlAxVwId0Gz8WKCm7YHWiga/ShEuskrfKB92Eag=",
         "owner": "neil-lobo",
         "repo": "shvl",
-        "rev": "1d54b12f3f4c41be7aae383d0e9b27b62823ee28",
+        "rev": "9d424eeaacdf16eff572049f970dfbb6833b5202",
         "type": "github"
       },
       "original": {
@@ -182,11 +182,11 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1784491056,
-        "narHash": "sha256-Ih4Bpr47RntQBQtRPv+E5CfYMsceXPmsQ9LjvEQuqdk=",
+        "lastModified": 1786410173,
+        "narHash": "sha256-25BopR8VHCSqrVn69ejm9s9tSW7ekOMo2xEh+h6eESc=",
         "ref": "refs/heads/technorino",
-        "rev": "42f5a7af562d0f980258b840db48deb9512c2b76",
-        "revCount": 6461,
+        "rev": "8f12a8fde7a8f6518a267b9983a65c5ed6a4ec15",
+        "revCount": 6510,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/2547techno/technorino"
