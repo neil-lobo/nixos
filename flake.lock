@@ -164,11 +164,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1786918572,
-        "narHash": "sha256-sEvuwlAxVwId0Gz8WKCm7YHWiga/ShEuskrfKB92Eag=",
+        "lastModified": 1787371872,
+        "narHash": "sha256-2fcVV4e4yhEGJDN5PcxVMGauYIaFxtz07kkdY0wkj9I=",
         "owner": "neil-lobo",
         "repo": "shvl",
-        "rev": "9d424eeaacdf16eff572049f970dfbb6833b5202",
+        "rev": "39640843c43b856127dfcd543919289fb5701524",
         "type": "github"
       },
       "original": {
