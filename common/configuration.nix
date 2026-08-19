@@ -139,9 +139,11 @@ in
 
     substituters = [
       "https://technorino.cachix.org"
+      "https://shvl.cachix.org"
     ];
     trusted-public-keys = [
       "technorino.cachix.org-1:u2mWFvgBuof1W3wr8VT5UQ10m4T1yoJb6fVnmhXf04o="
+      "shvl.cachix.org-1:wli03XQetW1I6IRGGyrNoMqBocdaU+GNsbEStfVAZEw="
     ];
   };
 
