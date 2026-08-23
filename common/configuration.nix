@@ -6,12 +6,14 @@
   system,
   technorino,
   shvl,
+  nsearch,
   ...
 }:
 
 let
   technorino-derivation = technorino.packages.${system}.default;
   shvl-derivation = shvl.packages.${system}.default;
+  nsearch-derivation = nsearch.packages.${system}.default;
 in
 {
   boot = {
@@ -168,6 +170,7 @@ in
           ++ [
             technorino-derivation
             shvl-derivation
+            nsearch-derivation
             (import ./pkgs/discord.nix { pkgs = pkgsUnstable; })
           ];
       };

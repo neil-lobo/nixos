@@ -9,6 +9,7 @@
     ninjabrainbot.url = "github:neil-lobo/Ninjabrain-Bot";
     home-manager.url = "github:nix-community/home-manager/release-25.05";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
+    nsearch.url = "github:niksingh710/nsearch";
   };
 
   outputs =
@@ -21,6 +22,7 @@
       ninjabrainbot,
       home-manager,
       nix-flatpak,
+      nsearch,
     }:
     let
       system = "x86_64-linux";
@@ -29,7 +31,12 @@
       nixosConfigurations = {
         epoch = nixpkgs.lib.nixosSystem {
           specialArgs = {
-            inherit system technorino shvl;
+            inherit
+              system
+              technorino
+              shvl
+              nsearch
+              ;
             pkgsUnstable = import nixpkgs-unstable {
               inherit system;
               config.allowUnfree = true;
@@ -55,6 +62,7 @@
               shvl
               ninjabrainbot
               nix-flatpak
+              nsearch
               ;
             pkgsUnstable = import nixpkgs-unstable {
               inherit system;
