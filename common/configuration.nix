@@ -180,7 +180,7 @@ in
   environment = {
     systemPackages = import ../.shvl/common/system.nix pkgs;
     variables = {
-      CHATTERINO2_RECENT_MESSAGES_URL = "https://logs.zonian.dev/rm/%1";
+      CHATTERINO2_RECENT_MESSAGES_URL = "https://bestlogs.supa.codes/rm/%1";
       EDITOR = "vim";
       NIXOS_OZONE_WL = "1";
       # TODO: this is used for ninjabrainbot to work in waywall. look into fixing prism/waywall instead. this is a temp fix
