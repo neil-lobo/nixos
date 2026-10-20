@@ -36,6 +36,5 @@ pkgs:
 		wine
 		xorg.xeyes
 		zip
-		zulu24
 	]
 )

@@ -8,5 +8,6 @@ pkgs:
 		gale
 		twitch-cli
 		vscode
+		zulu25
 	]
 )
